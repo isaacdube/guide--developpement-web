@@ -1,2 +1,2 @@
-# guide--developpement-web
+# guide-developpement-web
 Ensemble de règles et de bonnes pratiques de développement web
