@@ -31,6 +31,11 @@ let menu = {
     this.refButton.className = 'nav__control';
     this.refSpan.className = 'nav__span';
 
+
+    this.refButton.setAttribute('aria-expended', 'false');
+    this.refButton.setAttribute('aria-haspopup', 'menu');
+    this.refButton.setAttribute('aria-controls', 'navList');
+
     // On place le texte du Button dans son conteneur span
     this.refSpan.innerHTML = this.strNavClosed;
 
@@ -54,8 +59,10 @@ let menu = {
     // On change le texte du bouton selon l'état du menu
     if (this.refNav.classList.contains('nav--closed')) {
       this.refSpan.innerHTML = this.strNavClosed;
+    this.refButton.setAttribute('aria-expended', 'false');
     } else {
       this.refSpan.innerHTML = this.strNavOpen;
+    this.refButton.setAttribute('aria-expended', 'true');
     }
   }
 };
