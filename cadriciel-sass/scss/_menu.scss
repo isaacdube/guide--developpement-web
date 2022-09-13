@@ -13,7 +13,7 @@
  */
 
 /****** Base commune *******/
-
+@import "normalize";
 /* Bouton du menu */
 .nav__control {
     background-color: rgba(145, 0, 145, 0.2);
@@ -63,7 +63,7 @@
 
 /* Liens du menu */
 .nav__link {
-    background-color: rgba(145, 0, 145, 0.2);
+    background-color: $couleur-secondaire;
     display: block;
     padding: 5px 10px;
     width: 100%;
@@ -77,18 +77,18 @@
 
 .nav__link:hover {
     color:#fff;
-    background-color: darkmagenta;
+    background-color: $couleur-dominante;
 }
 
 .nav__link:active {
-    color:#fff;
-    background-color: magenta;
+    color:#ffffff;
+    background-color: $couleur-texte;
 }
 
 
 .nav__link:focus {
     outline-offset: -5px;
-    outline: darkmagenta auto 5px;
+    outline: $couleur-texte auto 5px;
 }
 @media (min-width: 600px) {
     .nav__link:focus {
@@ -101,12 +101,12 @@
     pour l'item de menu actif
     **/
 .nav__link--active {
-    border-left: 5px solid rgba(101, 68, 180, 1);
+    border-left: 5px solid $couleur-texte;
 }
 @media (min-width: 600px) {
     .nav__link--active {
         border-left:none;
-        border-bottom:5px solid rgba(101, 68, 180, 1);
+        border-bottom:5px solid $couleur-texte;
     }
 }
 

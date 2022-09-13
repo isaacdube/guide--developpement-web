@@ -1,7 +1,7 @@
 # Cadriciel - sass
 
 ## Lien vers Github Pages  
-https://IDENTIFIANT.github.io/guide-developpement-web/cadriciel-sass/
+https://isaacdube.github.io/guide--developpement-web/cadriciel-sass/
 
 ## @todo
 ### 1. Personnaliser le menu en améliorant son accessibilité

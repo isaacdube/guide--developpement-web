@@ -24,6 +24,7 @@ let menu = {
     this.refButton = document.createElement('button');
     this.refSpan = document.createElement('span');
 
+
     // On ajoute le span dans le bouton
     this.refButton.appendChild(this.refSpan);
 
@@ -31,12 +32,15 @@ let menu = {
     this.refButton.className = 'nav__control';
     this.refSpan.className = 'nav__span';
 
+
     // On place le texte du Button dans son conteneur span
     this.refSpan.innerHTML = this.strNavClosed;
 
     // On ajoute le Button dans le html:
     // plus précisément comme premier enfant dans le nav  
     this.refNav.prepend(this.refButton);
+
+
 
     // Ajout de l'écouteur d'événement sur le bouton du menu
     this.refButton.addEventListener('click', function () {
